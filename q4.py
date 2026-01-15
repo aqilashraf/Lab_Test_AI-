@@ -3,17 +3,10 @@ import nltk
 from nltk.tokenize import sent_tokenize
 from PyPDF2 import PdfReader
 
-# Download required tokenizer
+# Download required NLTK resources
 nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
 
-st.set_page_config(page_title="Text Chunking (Sentence-based)", layout="wide")
-
-st.title("Text Chunking Web App using NLTK Sentence Tokenizer")
-
-st.write(
-    "This app performs semantic sentence chunking on unstructured text "
-    "extracted from a PDF file using NLTK."
-)
 
 # Step 1: Upload PDF file
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
@@ -81,3 +74,4 @@ if uploaded_file is not None:
                 st.markdown("---")
 else:
     st.info("Please upload a PDF file to begin.")
+
