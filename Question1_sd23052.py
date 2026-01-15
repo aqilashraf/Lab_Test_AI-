@@ -83,8 +83,8 @@ st.set_page_config(page_title="Bit Pattern GA (70 bits, target ones = 40)", page
 
 st.title("🧬 Genetic Algorithm: Evolve a 70-bit Pattern")
 st.caption(
-    "Fixed requirements: Population = 200, Chromosome Length = 70, Generations = 50.\n"
-    "Fitness peaks at ones = 40, with max fitness = 70."
+    "Fixed requirements: Population = 300, Chromosome Length = 80, Generations = 50.\n"
+    "Fitness peaks at ones = 40, with max fitness = 80."
 )
 
 with st.expander("ℹ️ Problem setup (fixed by requirement)", expanded=True):
@@ -143,3 +143,4 @@ if run_btn:
         st.info("GA may reach near-optimal solutions; try another seed to explore further.")
 
 st.caption("© 2025 Simple GA demo (70 bits, optimum at 40 ones).")
+
